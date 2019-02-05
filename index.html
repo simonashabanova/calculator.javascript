@@ -9,8 +9,8 @@
             
             function calc()
             {
-                var n1 = parseFloat(document.getElementById('n1').value);
-                var n2 = parseFloat(document.getElementById('n2').value);
+                var n1 = parseFloat(document.getElementById('.n1').value);
+                var n2 = parseFloat(document.getElementById('.n2').value);
                 
                 var oper = document.getElementById('operators').value;
                 
@@ -40,18 +40,18 @@
     </head>
 <body>
 
-        <input type="text" id="n1"/>
-        <input type="text" id="n2"/>
+        <input class="n1" type="text"/>
+        <select class="select"></select>
         
         <select id="operators">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="/">/</option>
-            <option value="X">X</option>
+            <option value="symbol">+</option>
+            <option value="symbol">-</option>
+            <option value="symbol">/</option>
+            <option value="symbol">X</option>
         </select>
-        
-        <button onclick="calc();">=</button>
-        <input type="text" id="result"/>
+        <input class="n2" type="text"/>
+        <button class="calc" onclick="calc();">=</button>
+        <input type="res" type="result"/>
         
 
 </body>
